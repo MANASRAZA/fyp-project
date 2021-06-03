@@ -1,0 +1,261 @@
+nav{
+    font-size: 14px;
+    text-transform: uppercase;
+    float: left;
+    font-family: 'kufam',sans-serif;
+    background: rgb(87, 86, 86);
+    width: 1200px;
+    position:absolute;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin-left: 80px;
+   border-radius: 10px;
+   box-shadow: 5px 5px 15px grey ;
+   opacity: .7;
+}
+.responsive{
+    float: left;
+    padding: 15px 10px;
+    width: 100%;
+    margin-left: 30px;
+   
+}
+
+.drop-list{
+    float: none;
+    display: block;
+    text-align: center;
+    padding: 8px;
+    font-size: 10px;
+    text-decoration: none;
+    color: rgb(14, 13, 12);
+}
+.drop-list:hover{
+    color: cornsilk;
+    background: black;
+}
+.drop-lists{
+    display: none;
+    min-width: 190px;
+    background: rgba(89, 240, 207, 0.582);
+    color: cornsilk;
+    float: left;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    margin: 0;
+    padding: 8px 0;
+    text-transform: capitalize;
+}
+.nav-link{
+    padding: 15px 10px;
+    text-decoration: none;
+    float: left;
+    display: block;
+    text-align: center;
+    color: rgb(255, 251, 251);
+    cursor: pointer;
+}
+.nav-link:hover, .dropdown:hover .nav-link{
+    color: rgb(10, 9, 9);
+    background: cornsilk;
+    transition: all 0.5s ease-in-out;
+}
+.dropdown{
+    position: relative;
+    float: left;
+}
+
+.menu{
+    display: none;
+}
+.dropdown:hover .drop-lists{
+    display: block;
+}
+.main{
+  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    font-size: 35px;
+    text-align: center;
+    color: rgb(255,248,220);
+    padding: 5px;
+}
+             /* ----------------------------------------------------- */
+
+             @media screen and (max-width:950px){
+    .responsive{
+        width: 200px;
+        height: 100vh;
+        
+        position: absolute;  
+        background: rgba(13, 71, 99, 0.75);
+        top: 55px;
+        padding: 0;
+        
+        
+        
+    }
+   
+    .menu{
+        display:block;
+      
+        margin-left: 200px;
+        
+        top: 0;
+        font-size: 35px;
+        outline: none;
+        border: none;
+        background: none;
+        color: cornsilk;
+      
+        margin-right: 29px;
+        cursor:pointer;
+        margin-bottom: 5px;
+        
+    }
+    
+    .menu:hover{
+        color: black;
+    }
+    nav{
+        display: block;
+        height: 55px;
+        
+    }
+    .nav-link{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    .drop-lists{
+        position: relative;
+        width: 200px;
+        padding: 10px 0;
+        top: 0;
+        left: 0;
+    }
+    .dropdown{
+        float: none;
+    }
+    .toggle{
+        display: none;
+    }
+}
+
+
+.circle {
+	width:50px;
+	height:50px;
+	position:relative;
+
+
+}
+.line {
+	position: absolute;
+	height: 7px;
+	width:100%;
+	background:white;
+	border-radius:8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.85s;
+}
+.top {
+	top:18%;
+}
+.middle {
+	top:48%;
+}
+.bottom {
+	top:78%;
+}
+.icon.close .top {
+	transform:rotate(45deg);
+	top:48%;
+}
+.icon.close .middle, .icon.close .bottom {
+	transform:rotate(-45deg);
+	top:48%;
+}
+.num{
+    margin-left: 370px;
+  padding-top: 50px;
+}
+#dv-1{
+    width: 100%;
+  margin: 0 auto;
+/* margin-left: 300px; */
+  margin-top: 10px;
+ 
+}
+.div-cls1{
+    background-color: rgb(255, 155, 155);
+   cursor: pointer;
+   border: none;
+    height: 200px;
+    width: 500px; 
+   margin: 50px;
+   margin-left: 100px;
+   border-radius: 5px;
+   
+  float: left;
+    
+}
+.div-cls2{
+    background-color: rgb(110, 255, 255);
+    cursor: pointer;
+   border: none;
+    height: 200px;
+    width: 500px; 
+   margin: 50px;
+   border-radius: 5px;
+   
+  float: left;
+    
+}
+.div-cls3{
+    background-color: rgb(64, 124, 255);
+    cursor: pointer;
+   border: none;
+    height: 200px;
+    width: 500px; 
+   margin: 50px;
+   border-radius: 5px;
+   margin-left: 100px;
+  float: left;
+    
+}
+.div-cls4{
+    background-color: rgb(242, 255, 128);
+    cursor: pointer;
+   border: none;
+    height: 200px;
+    width: 500px; 
+   margin: 50px;
+   border-radius: 5px;
+   
+  float: left;
+    
+} 
+.div-cls1 a,.div-cls2 a,.div-cls3 a,.div-cls4 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+@media screen and (max-width:900px){
+    .div-cls2 ,.div-cls4{
+        margin-left: 100px;
+    }
+}
+#lg{
+    float: right;
+    font-weight: 200;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+}
